@@ -2154,15 +2154,48 @@ a.showcoupon {
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.dop-info-header {
+    background-image: url(/img/bistriu-start.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-inclusive{
+    background-image: url(/img/vse-vklucheno.jpg);
+}
+
+.ultra-all-inclusive{
+    background-image: url(/img/ultra-vse-vklucheno.jpg);
 }
 
 .quick-start__name {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.dop-info-header__name {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .quick-start__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 70px;
     background-color: #2e2d2d;
     border-radius: 20px;
@@ -2171,11 +2204,29 @@ a.showcoupon {
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 3rem;
+    text-align: center;
+}
+
+.dop-info-header__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin: 0 2.4rem;
+    color: #ff3737a8;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
 .quick-start__time {
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .quick-start__clock-img {
@@ -2189,9 +2240,71 @@ a.showcoupon {
     width: 275px;
 }
 
-.block-info__title {
-    margin-right: 15px;
-    margin-left: 15px;
+.block-info{
+    margin-bottom: 20px;
+    color: #dadada;
+    transition: 1s;
+}
+
+.dop-info-main{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.block-info__spec{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 1.5rem;
+}
+
+.dop-info-main__spec{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 1.5rem;
+}
+
+.buy-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #2e2d2d;
+    border-radius: 20px;
+    margin: 0 2.4rem;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.buy-service:hover{
+    text-decoration: none;
+    color: rgb(173, 173, 173) !important;
+    cursor: pointer;
+}
+
+.one-spec{
+    margin-left: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.one-spec__img-not-active{
+    width: 10px;
+    margin-right: 10px;
+    flex-shrink: 0; /* запретить ужиматься во флекс-контексте */
+    margin-top: 8px;
+}
+
+.one-spec__text{
+    margin: 0;
+}
+
+.dop-info-main__text{
+    margin: 0;
+    margin-bottom: 2rem;
+    height: 240px;
 }
 
 @media (max-width: 575px) {
@@ -2215,3 +2328,4 @@ a.showcoupon {
 .jquery-modal {
     z-index: 9;
 }
+
